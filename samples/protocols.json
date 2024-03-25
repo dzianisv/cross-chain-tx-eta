@@ -1,0 +1,2245 @@
+[
+    {
+        "id": "ZyaqoUMH7bXN9GE63sg8V",
+        "name": "Aloe",
+        "description": "Aloe puts liquidity to work by connecting lenders and market-makers. Fully open-source, governance-minimized, and powered by Uniswap.",
+        "type": "lending",
+        "tagline": "Permissionless lending built on Uniswap",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "aloe",
+        "primary_color": "#33c6ab",
+        "status": "",
+        "status_message": "nominal",
+        "deploy_date": "2023-12-14T00:00:00Z",
+        "users": [
+            {
+                "id": "IvKgNisrFEzQ88xsZrfsq",
+                "dynamicId": "951ba056-7afa-41c9-be9d-67dbdc869502",
+                "dynamicWalletId": "e92e88d3-6d69-4356-b7ff-170e49c59085",
+                "address": "0xBbc2cd847Bdf10468861DAb854Cd2B2E315e28c8",
+                "protocolId": "ZyaqoUMH7bXN9GE63sg8V",
+                "Protocol": null,
+                "name": "Aloe Labs Ops",
+                "role": "owner",
+                "createdAt": "2024-01-25T20:47:54.609204Z",
+                "updatedAt": "2024-01-25T20:47:54.609204Z"
+            },
+            {
+                "id": "-WmNsRNqe7GNSXsPiIGup",
+                "dynamicId": "c8c4c0cf-3d64-4e40-b274-9b04dc278625",
+                "dynamicWalletId": "ab5d6e14-ccae-4cb6-86cb-ee454146e082",
+                "address": "0xC3feD7757CD3eb12b155F230Fa057396e9D78EAa",
+                "protocolId": "ZyaqoUMH7bXN9GE63sg8V",
+                "Protocol": null,
+                "name": "Aloe Labs Ops 2.0",
+                "role": "admin",
+                "createdAt": "2024-01-26T03:28:39.211711Z",
+                "updatedAt": "2024-01-26T03:28:39.211711Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "mUhRCzYkz2q0MLXnNjljo",
+                "protocol_id": "ZyaqoUMH7bXN9GE63sg8V",
+                "audit_name": "BlockSec",
+                "audit_link": "https://github.com/aloelabs/aloe-ii/blob/master/audits/08-22-23-BlockSec.pdf",
+                "audit_date": "2023-08-22T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-07T18:22:40.493871Z",
+                "updated_at": "2024-02-07T18:22:40.493871Z"
+            },
+            {
+                "id": "9OKu4Ei7lK9jGav18XbG0",
+                "protocol_id": "ZyaqoUMH7bXN9GE63sg8V",
+                "audit_name": "Sherlock",
+                "audit_link": "https://github.com/aloelabs/aloe-ii/blob/master/audits/10-28-23-Sherlock.pdf",
+                "audit_date": "2023-10-28T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-07T18:22:40.493871Z",
+                "updated_at": "2024-02-07T18:22:40.493871Z"
+            }
+        ],
+        "exploits": null,
+        "faq": [
+            {
+                "id": "hiJqfjssG4z07qFaTgAag",
+                "protocol_id": "ZyaqoUMH7bXN9GE63sg8V",
+                "question": "Does aloe charge any fees?",
+                "answer": "We do not charge any fees to use the protocol. We believe in the power of open-source ecosystems, and provide our interface free-of-charge.  That said, as the protocol earns interest, not all of it goes to you. Some is set aside as \"reserves\" to help protect against bad debt. This safety mechanism is built into the protocol and operates autonomously.",
+                "is_deleted": false,
+                "created_at": "2024-02-07T18:22:40.493871Z",
+                "updated_at": "2024-02-07T18:22:40.493871Z"
+            },
+            {
+                "id": "8Y4_CcqiUQ7EDuqIv6XNe",
+                "protocol_id": "ZyaqoUMH7bXN9GE63sg8V",
+                "question": "What if everyone tries to withdraw at once?",
+                "answer": "TLDR: Withdrawals would be delayed, but as long as there's no bad debt, everyone can withdraw eventually.  The protocol targets 80% pool utilization, which would mean 80% of funds are loaned out, and 20% are available for withdrawal. If utilization is too high, interest rates go up. This incentivizes borrowers to repay, and once they do, more people can withdraw.  You can read more about the relationship between utilization and interest rate in our docs.",
+                "is_deleted": false,
+                "created_at": "2024-02-07T18:22:40.493871Z",
+                "updated_at": "2024-02-07T18:22:40.493871Z"
+            },
+            {
+                "id": "iBGhRCYl8j3ioOgUHmZCn",
+                "protocol_id": "ZyaqoUMH7bXN9GE63sg8V",
+                "question": "Will I earn a fixed interest rate, or does it change over time?",
+                "answer": "Interest rates change over time, based on supply and demand. The protocol controls this autonomously.",
+                "is_deleted": false,
+                "created_at": "2024-02-07T18:22:40.493871Z",
+                "updated_at": "2024-02-07T18:22:40.493871Z"
+            }
+        ],
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/N7MpGJ3TZWO_GxsoqxzAL.png",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/N7MpGJ3TZWO_GxsoqxzAL.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://aloe.capital",
+            "twitter": "https://twitter.com/aloecapital",
+            "discord": "https://discord.gg/gpt4sUv6sw",
+            "telegram": ""
+        },
+        "chain_ids": [
+            10,
+            42161,
+            8453
+        ],
+        "deployers": [
+            {
+                "id": "GK6r40JW76XZKz07OqhFk",
+                "vaultCount": 0,
+                "name": "aloe labs deployer",
+                "address": "0xC3feD7757CD3eb12b155F230Fa057396e9D78EAa",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-25T20:47:54.609204Z",
+                "updatedAt": "2024-01-25T20:47:54.609204Z"
+            }
+        ],
+        "tvl": 1166742.4886376902,
+        "vaults_amount": 21,
+        "created_at": "2024-01-25T20:47:54.609204Z",
+        "updated_at": "2024-02-07T18:22:40.493356Z"
+    },
+    {
+        "id": "a1NGl_3lQlweIoAh4-qZD",
+        "name": "Idle",
+        "description": "THE DEFI YIELD AUTOMATION INFRASTRUCTURE FOR NEXT-GEN FINANCIAL PLAYERS",
+        "type": "yield optimizer",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "idle",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2019-08-08T00:00:00Z",
+        "users": [
+            {
+                "id": "15-JzcV6CbDBqhlX_0Fi3",
+                "dynamicId": "f538e1da-177b-4516-9de7-8fb1b59f8d23",
+                "dynamicWalletId": "7ae26862-7aef-46e3-9618-ab47928d7db0",
+                "address": "0xeA173648F959790baea225cE3E75dF8A53a6BDE5",
+                "protocolId": "a1NGl_3lQlweIoAh4-qZD",
+                "Protocol": null,
+                "name": "Biaf",
+                "role": "owner",
+                "createdAt": "2024-01-29T18:30:58.242688Z",
+                "updatedAt": "2024-01-29T18:30:58.242688Z"
+            },
+            {
+                "id": "W10yJAHC01KSIiXawQ_0s",
+                "dynamicId": "546aeca9-f34c-4bcd-81cd-3caef0cf5b57",
+                "dynamicWalletId": "94534b4f-e4ef-44eb-9de0-7eaf5800150c",
+                "address": "0xC3F6e18b429b6BAf1bD31B1E504aee7827C7AAb5",
+                "protocolId": "a1NGl_3lQlweIoAh4-qZD",
+                "Protocol": null,
+                "name": "Matteo",
+                "role": "admin",
+                "createdAt": "2024-01-29T18:30:58.242688Z",
+                "updatedAt": "2024-01-29T18:30:58.242688Z"
+            },
+            {
+                "id": "7awNms5c1T0yzOp5Xj_qv",
+                "dynamicId": "d0a6be4a-aa18-4d4f-894e-974b01e3fab2",
+                "dynamicWalletId": "e00d2b7c-84e5-4f31-9b8c-c1d2a5e6377c",
+                "address": "0xFD21f0A555724035CdEA6A51Fa6bb92ED257dB8C",
+                "protocolId": "a1NGl_3lQlweIoAh4-qZD",
+                "Protocol": null,
+                "name": "Ginevra",
+                "role": "admin",
+                "createdAt": "2024-01-29T18:30:58.242688Z",
+                "updatedAt": "2024-01-29T18:30:58.242688Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "x9P1Gwmk2euy1iJPP5fGu",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Hats Finance",
+                "audit_link": "https://2235025969-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Lw-v0NTae0RVW1spR9R%2Fuploads%2F0umu3sMXiudgDjhob6B3%2FYield-Tranches-audit-report-30102023.pdf?alt=media\u0026token=18ba1e1f-5979-4ed9-9b9f-41480c2b3db2",
+                "audit_date": "2023-10-29T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            },
+            {
+                "id": "hNc_b75fPpRTqw6Gjyi5Z",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Code4rena",
+                "audit_link": "https://2235025969-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Lw-v0NTae0RVW1spR9R%2Fuploads%2FHSXbuUAWPlYgTVLYH7eX%2FIdle_Finance_Yield_Tranches_Audit_Report_Hans_20230901.pdf?alt=media\u0026token=b062bd29-2272-4efe-971d-8b44ca8d711d",
+                "audit_date": "2023-08-31T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            },
+            {
+                "id": "zuj7VyQqF0LIuwzV-rsEW",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Certik",
+                "audit_link": "https://skynet.certik.com/projects/idle-finance",
+                "audit_date": "2021-10-24T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            },
+            {
+                "id": "ibTh2PdzhiPMfKyVGePGl",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Consensys diligence",
+                "audit_link": "https://consensys.io/diligence/audits/2021/06/idle-finance/",
+                "audit_date": "2021-05-31T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            },
+            {
+                "id": "ZC-RodY_83UTiuFd0paPW",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Quantstamp",
+                "audit_link": "https://certificate.quantstamp.com/full/idle-finance.pdf",
+                "audit_date": "2021-04-25T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            },
+            {
+                "id": "qq2rUEaPquklppkXmn_D9",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "audit_name": "Quantstamp",
+                "audit_link": "https://certificate.quantstamp.com/full/idle-governance.pdf",
+                "audit_date": "2020-11-25T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            }
+        ],
+        "exploits": null,
+        "faq": [
+            {
+                "id": "dM5Xu5ao9BmQAK27UZ8LN",
+                "protocol_id": "a1NGl_3lQlweIoAh4-qZD",
+                "question": "FAQ",
+                "answer": "https://docs.idle.finance/other/faqs",
+                "is_deleted": false,
+                "created_at": "2024-01-29T19:07:27.047202Z",
+                "updated_at": "2024-01-29T19:07:27.047202Z"
+            }
+        ],
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/h4MxC4xW-DUk6kqxpqBsX.png",
+            "header": "https://superform-celeste.s3.amazonaws.com/idB8ivbeYz--Fl7n5IqeE.png",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/h4MxC4xW-DUk6kqxpqBsX.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://idle.finance/#/",
+            "twitter": "https://twitter.com/idlefinance",
+            "discord": "https://discord.gg/mpySAJp",
+            "telegram": "https://t.me/idlefinance"
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "skhg71i_vdiGq-JmQfmHC",
+                "vaultCount": 0,
+                "name": "Deployer",
+                "address": "0xE5Dab8208c1F4cce15883348B72086dBace3e64B",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-29T18:30:58.242688Z",
+                "updatedAt": "2024-01-29T18:30:58.242688Z"
+            }
+        ],
+        "tvl": 4598237.569897469,
+        "vaults_amount": 6,
+        "created_at": "2024-01-29T18:30:58.242688Z",
+        "updated_at": "2024-01-29T19:07:27.046961Z"
+    },
+    {
+        "id": "15AknmJu0XBd5le9o-UsL",
+        "name": "sandclock",
+        "description": "Sandclock BUILDS highly curated yield strategies, selected specifically to endure changing market conditions and perform well throughout them — Bull, bear, or crab. ",
+        "type": "yield optimizer",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "sandclock",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2021-09-01T00:00:00Z",
+        "users": [
+            {
+                "id": "okrxL738dFDyUV53VDAOA",
+                "dynamicId": "839375c7-719a-48cd-87be-c8d770ac4ed2",
+                "dynamicWalletId": "5880d915-8e73-4d23-83e1-dfaee9578879",
+                "address": "0x84f67f75DAf6D57Aef500E0c85C77B7b3bBc92A9",
+                "protocolId": "15AknmJu0XBd5le9o-UsL",
+                "Protocol": null,
+                "name": "deployer",
+                "role": "owner",
+                "createdAt": "2024-02-02T08:53:24.579631Z",
+                "updatedAt": "2024-02-02T08:53:24.579631Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "Au4g6qKtdm5xO-5VDFw7x",
+                "protocol_id": "15AknmJu0XBd5le9o-UsL",
+                "audit_name": "trail of bits",
+                "audit_link": "https://github.com/trailofbits/publications/blob/master/reviews/2023-07-sandclock-securityreview.pdf",
+                "audit_date": "2023-08-22T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-14T14:43:03.533196Z",
+                "updated_at": "2024-02-14T14:43:03.533196Z"
+            },
+            {
+                "id": "6Aq74lXXBMxGj2qPZErDc",
+                "protocol_id": "15AknmJu0XBd5le9o-UsL",
+                "audit_name": "Watch pug",
+                "audit_link": "https://github.com/lindy-labs/sandclock-contracts/blob/main/audits/2023_April_27_WatchPug_Audit_Report.pdf",
+                "audit_date": "2023-04-26T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-14T14:43:03.533196Z",
+                "updated_at": "2024-02-14T14:43:03.533196Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/lLDVrR-HmNSPi2ooqW5dV.jpg",
+            "header": "https://superform-celeste.s3.amazonaws.com/HC3jDmdGFBASW3lCrMhSq.svg",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/lLDVrR-HmNSPi2ooqW5dV.jpg",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://sandclock.org",
+            "twitter": "https://twitter.com/sandclockorg",
+            "discord": "https://discord.gg/TMtbPQvWJV",
+            "telegram": ""
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "owo7_7VmwajhT7AdTukJ0",
+                "vaultCount": 0,
+                "name": "DEPLOYER",
+                "address": "0x84f67f75DAf6D57Aef500E0c85C77B7b3bBc92A9",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-02T08:04:29.1728Z",
+                "updatedAt": "2024-02-02T08:55:37.649702Z"
+            }
+        ],
+        "tvl": 572666.5539107221,
+        "vaults_amount": 3,
+        "created_at": "2024-02-02T08:53:24.579631Z",
+        "updated_at": "2024-02-14T14:43:03.531699Z"
+    },
+    {
+        "id": "8CaGt3W1lYnEPLDU-8uG-",
+        "name": "exactly protocol",
+        "description": "Exactly Protocol is a decentralized, non-custodial, open-source protocol providing an autonomous fixed and variable interest rate market.",
+        "type": "lending",
+        "tagline": "Decentralizing the credit market,\ntoday",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "exactly",
+        "primary_color": "#ffffff",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2022-11-11T00:00:00Z",
+        "users": [
+            {
+                "id": "IN4OIpejK2CwIoXMy7XTV",
+                "dynamicId": "71527f1e-63f2-4dd4-b055-b1312af96354",
+                "dynamicWalletId": "515decf0-05cf-4129-bf7f-a207648be7fe",
+                "address": "0x287796f1bf4D8f6e9b14adAa29B7D6106A82b2Af",
+                "protocolId": "8CaGt3W1lYnEPLDU-8uG-",
+                "Protocol": null,
+                "name": "ito",
+                "role": "admin",
+                "createdAt": "2024-02-07T12:21:11.934334Z",
+                "updatedAt": "2024-02-07T12:21:11.934334Z"
+            },
+            {
+                "id": "7h1_NhyIFKIsEngnrNMco",
+                "dynamicId": "d6d7aee9-29d2-4bf0-8027-f931cf14bcb8",
+                "dynamicWalletId": "fc25da55-d72b-4bc0-9bdc-8cd34d0aff37",
+                "address": "0xcEa12FAf09afA3844C021Cd5296FB0f8Dd0012fa",
+                "protocolId": "8CaGt3W1lYnEPLDU-8uG-",
+                "Protocol": null,
+                "name": "jor",
+                "role": "admin",
+                "createdAt": "2024-02-07T12:21:11.934334Z",
+                "updatedAt": "2024-02-07T12:21:11.934334Z"
+            },
+            {
+                "id": "QvbuUO_nicLWLZG4XTT9t",
+                "dynamicId": "5663629d-3440-4350-9033-543a76ec659d",
+                "dynamicWalletId": "9a1d85be-e0d5-416e-93c3-ad2c19a87efe",
+                "address": "0xE72185a9f4Ce3500d6dC7CCDCfC64cf66D823bE8",
+                "protocolId": "8CaGt3W1lYnEPLDU-8uG-",
+                "Protocol": null,
+                "name": "dan",
+                "role": "owner",
+                "createdAt": "2024-02-20T16:54:21.386415Z",
+                "updatedAt": "2024-02-20T16:54:21.386415Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "CLwZI7fO2t58ezCYLDwo5",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/exactly/audits/blob/main/ABDK%20Interest%20Rate%20Model%20v2%20(Feb-24).pdf",
+                "audit_date": "2024-02-15T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "3ctw656MLVncXeMmy2ADW",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "OpenZeppelin",
+                "audit_link": "https://github.com/exactly/audits/blob/main/OpenZeppelin%20EscrowedEXA%20(Oct-23).pdf",
+                "audit_date": "2023-10-18T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "hYOLzjad_GZsjiT53soSl",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/exactly/audits/blob/main/ABDK%20PeripheralContracts%201st%20audit%20(Sep-23).pdf",
+                "audit_date": "2023-09-27T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "rpscxUVuXwUA61uH1a895",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/exactly/audits/blob/main/ABDK%20EscrowedEXA%20(Sep-23).pdf",
+                "audit_date": "2023-09-27T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "dhxHBj7JWAuzm5TO4Sft0",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/exactly/audits/blob/main/ABDK%202nd%20audit%20(May-23).pdf",
+                "audit_date": "2023-05-18T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "FeUoKBI1aPTbvDSGNsaYV",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%20RewardsController%203rd%20audit%20(Mar-23).pdf",
+                "audit_date": "2023-03-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "sAtRoHI7BNQhvdBpv7klr",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%205th%20audit%20(Mar-23).pdf",
+                "audit_date": "2023-03-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "aT9_ratOkePzbybgrCe3z",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%20RewardsController%202nd%20audit%20(Feb-23).pdf",
+                "audit_date": "2023-02-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "zL5s9bmZ0m16s4pOoL-tl",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%20RewardsController%201st%20audit%20(Jan-23).pdf",
+                "audit_date": "2023-01-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "FGhbdkqI7z9fe7nDuLITx",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/exactly/audits/blob/main/ABDK%201st%20audit%20(Oct-22).pdf",
+                "audit_date": "2022-11-06T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "hj_5wGke_7HBOekOc_u1N",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Chainsafe",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Chainsafe%202nd%20audit%20(Oct-22).pdf",
+                "audit_date": "2022-10-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "_l6prtDcAkiQs9hq2LpkT",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%204th%20audit%20(Oct-22).pdf",
+                "audit_date": "2022-10-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "E5i7CxIZB0YE8DcOqfk2j",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%203rd%20audit%20(Oct-22).pdf",
+                "audit_date": "2022-10-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "eTB8LxzoWGhPZaF8WSm-a",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Cryptecon",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Cryptecon_Economics_of_the_Exactly_Protocol(Sep-22).pdf",
+                "audit_date": "2022-09-09T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "U0wK0R3-BHklqoxVS50dI",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Chainsafe",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Chainsafe%201st%20audit%20(May-22).pdf",
+                "audit_date": "2022-05-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "4qbDDjQB3URo6w1Z-eWob",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%202nd%20audit%20(May-22).pdf",
+                "audit_date": "2022-05-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            },
+            {
+                "id": "a-kysUiP8ooaObRiD6pTy",
+                "protocol_id": "8CaGt3W1lYnEPLDU-8uG-",
+                "audit_name": "Coinspect",
+                "audit_link": "https://github.com/exactly/audits/blob/main/Coinspect%201st%20audit%20(Nov-21).pdf",
+                "audit_date": "2021-11-02T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T18:24:04.734318Z",
+                "updated_at": "2024-02-20T18:24:04.734318Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/k0_lInQdwxBiGfpCh55VY.svg",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/k0_lInQdwxBiGfpCh55VY.svg",
+            "watermark": "https://superform-celeste.s3.amazonaws.com/Z5-mmGYbz-0HjdROyIqnY.png"
+        },
+        "links": {
+            "website": "https://exact.ly/",
+            "twitter": "https://twitter.com/ExactlyProtocol",
+            "discord": "https://discord.com/invite/eNTyPvgA4P",
+            "telegram": ""
+        },
+        "chain_ids": [
+            10
+        ],
+        "deployers": [
+            {
+                "id": "p6decZLMFA2mPm0oqVxar",
+                "vaultCount": 0,
+                "name": "exactly",
+                "address": "0xe61Bdef3FFF4C3CF7A07996DCB8802b5C85B665a",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-07T11:34:28.686468Z",
+                "updatedAt": "2024-02-07T12:21:11.938823Z"
+            }
+        ],
+        "tvl": 22619984.780404016,
+        "vaults_amount": 5,
+        "created_at": "2024-02-07T12:21:11.934334Z",
+        "updated_at": "2024-02-20T18:24:04.733014Z"
+    },
+    {
+        "id": "o4ZlyWMdPl2iFsGZSmIaX",
+        "name": "Sommelier",
+        "description": "SOMMELIER IS AN INNOVATIVE Decentralized ASSET MANAGEMENT PROTOCOL THAT ENABLES INTELLIGENT VAULTS TO INGEST REAL-TIME MARKET INFORMATION AND DYNAMICALLY ADAPT TO MARKET CONDITIONS, PROVIDING ENHANCED OPPORTUNITIES AND RISK MITIGATION FOR USERS.",
+        "type": "yield optimizer",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "sommelier",
+        "primary_color": "#6c4ed9",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2023-01-25T00:00:00Z",
+        "users": [
+            {
+                "id": "vtlO78n3tZ0O-xJdqVsgz",
+                "dynamicId": "7307e389-3260-4545-95a5-e3770232d80f",
+                "dynamicWalletId": "ba4a069c-43bd-433c-b3ac-33f545daefb5",
+                "address": "0x4D05b7d8b81933d1c467ec30EF4D0B7423364D27",
+                "protocolId": "o4ZlyWMdPl2iFsGZSmIaX",
+                "Protocol": null,
+                "name": "Business Growth",
+                "role": "admin",
+                "createdAt": "2024-01-31T14:59:56.810685Z",
+                "updatedAt": "2024-01-31T14:59:56.810685Z"
+            },
+            {
+                "id": "BVyg2Es4IE-Igq59yrrzQ",
+                "dynamicId": "9f151bfa-b63d-4956-aea2-869a75abfce1",
+                "dynamicWalletId": "93945a51-453d-4de6-a39d-8111a70f2973",
+                "address": "0x361a4f4F4BD3e3aab31149C10d8F34D3503dbae9",
+                "protocolId": "o4ZlyWMdPl2iFsGZSmIaX",
+                "Protocol": null,
+                "name": "Growth",
+                "role": "owner",
+                "createdAt": "2024-02-08T03:03:10.215444Z",
+                "updatedAt": "2024-02-08T03:03:10.215444Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "f-dQH26S1RRspFsX8oscJ",
+                "protocol_id": "o4ZlyWMdPl2iFsGZSmIaX",
+                "audit_name": "Macro",
+                "audit_link": "https://www.sommelier.finance/audits",
+                "audit_date": "2023-12-15T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-26T15:52:28.974687Z",
+                "updated_at": "2024-02-26T15:52:28.974687Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/lDyQ3WKft5H9DsGXYuWhb.png",
+            "header": "https://superform-celeste.s3.amazonaws.com/yt92w55vn_9H1lPv9GtnH.png",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/lDyQ3WKft5H9DsGXYuWhb.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://www.sommelier.finance/",
+            "twitter": "https://twitter.com/sommfinance",
+            "discord": "https://discord.gg/ZcAYgSBxvY",
+            "telegram": "https://t.me/getsomm"
+        },
+        "chain_ids": [
+            1,
+            42161
+        ],
+        "deployers": [
+            {
+                "id": "Zdw4QeHd1vdo04eP7c23C",
+                "vaultCount": 0,
+                "name": "Deployer_0",
+                "address": "0x552acA1343A6383aF32ce1B7c7B1b47959F7ad90",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-31T14:59:56.810685Z",
+                "updatedAt": "2024-01-31T14:59:56.810685Z"
+            },
+            {
+                "id": "GramIUG3-q7xNjgBJ3iGy",
+                "vaultCount": 0,
+                "name": "Deployer_1",
+                "address": "0x6d3655EE04820f4385a910FD1898d4Ec6241F520",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-31T14:59:56.810685Z",
+                "updatedAt": "2024-01-31T14:59:56.810685Z"
+            },
+            {
+                "id": "fNRWcFwZ6zS9K_tOFn7bI",
+                "vaultCount": 0,
+                "name": "Deployer_2",
+                "address": "0xeeF7b7205CAF2Bcd71437D9acDE3874C3388c138",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-26T06:08:33.060731Z",
+                "updatedAt": "2024-02-26T06:08:33.060731Z"
+            }
+        ],
+        "tvl": 63497109.81695157,
+        "vaults_amount": 4,
+        "created_at": "2024-01-31T14:59:56.810685Z",
+        "updated_at": "2024-02-26T15:52:28.974527Z"
+    },
+    {
+        "id": "AumBTREyN4OtxiAqw5QYE",
+        "name": "Yearn",
+        "description": "Yearn is a decentralized suite of products helping individuals, DAOs, and other protocols earn yield on their digital assets.",
+        "type": "aggregator",
+        "tagline": "defi made simple",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "yearn",
+        "primary_color": "#0657f9",
+        "status": "",
+        "status_message": "Bussin",
+        "deploy_date": "1955-04-20T00:00:00Z",
+        "users": [
+            {
+                "id": "LQ2da2gOdpY1ye6am_mbi",
+                "dynamicId": "e4705a31-eded-49de-9da4-c0f30830e543",
+                "dynamicWalletId": "c6c83927-f68a-4cf7-88ff-4bae8cb6599e",
+                "address": "0x78d4BDEBc0B4140f01BAB63085F94A5a7A1294f2",
+                "protocolId": "AumBTREyN4OtxiAqw5QYE",
+                "Protocol": null,
+                "name": "V3 Deployer",
+                "role": "owner",
+                "createdAt": "2024-02-06T15:53:21.869276Z",
+                "updatedAt": "2024-02-06T15:53:21.869276Z"
+            },
+            {
+                "id": "atywzqP8A0e4UfF9lCRmY",
+                "dynamicId": "d818f232-e95a-4b43-969e-8c7b1db8a2e7",
+                "dynamicWalletId": "ea7c9a78-e2fa-4e08-af8f-8fe9fe468ee5",
+                "address": "0xB7A31346433430D92846f0181C55Fc506B9b22d8",
+                "protocolId": "AumBTREyN4OtxiAqw5QYE",
+                "Protocol": null,
+                "name": "MArketing",
+                "role": "admin",
+                "createdAt": "2024-02-06T18:26:36.825717Z",
+                "updatedAt": "2024-02-06T18:26:36.825717Z"
+            },
+            {
+                "id": "im0ga7mDf-ZTlE0QBtxar",
+                "dynamicId": "506e2344-0d0a-4aae-bad0-74d9ef0e0a5d",
+                "dynamicWalletId": "88f48cbf-875f-4cf5-82bf-a2ffe01b09b9",
+                "address": "0x5FcdC32DfC361a32e9d5AB9A384b890C62D0b8AC",
+                "protocolId": "AumBTREyN4OtxiAqw5QYE",
+                "Protocol": null,
+                "name": "PooPi",
+                "role": "admin",
+                "createdAt": "2024-02-07T16:57:34.55073Z",
+                "updatedAt": "2024-02-07T16:57:34.55073Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/BETyZ9E5-cthwrAbde4nV.png",
+            "header": "https://superform-celeste.s3.amazonaws.com/aTCNYzWXhDqmzYu0xUhDy.jpeg",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/BETyZ9E5-cthwrAbde4nV.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://yearn.fi/v3",
+            "twitter": "https://twitter.com/yearnfi",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [
+            1,
+            137,
+            42161
+        ],
+        "deployers": [
+            {
+                "id": "kPfiX5KzBtOTH2nY_sCUj",
+                "vaultCount": 0,
+                "name": "",
+                "address": "0x78d4BDEBc0B4140f01BAB63085F94A5a7A1294f2",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-06T15:57:09.984897Z",
+                "updatedAt": "2024-02-06T15:57:09.984897Z"
+            },
+            {
+                "id": "AAliycCKa5mp6IHEThLYF",
+                "vaultCount": 0,
+                "name": "",
+                "address": "0x5FcdC32DfC361a32e9d5AB9A384b890C62D0b8AC",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-07T17:43:06.958588Z",
+                "updatedAt": "2024-02-07T17:43:06.958588Z"
+            }
+        ],
+        "tvl": 17988344.841057014,
+        "vaults_amount": 14,
+        "created_at": "2024-02-06T15:53:21.869276Z",
+        "updated_at": "2024-03-18T16:26:20.691716Z"
+    },
+    {
+        "id": "-4VduL02uz-b66t2PvXfc",
+        "name": "Gearbox",
+        "description": "Get up to 10x leverage and use it across DeFi protocols. Gearbox Protocol allows anyone to get leverage in a decentralized way and use it across various other protocols in a composable way: margin trading, leverage farming, and more!",
+        "type": "leveraged_farming",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "gearbox",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "BC0TT5y6xQrvlmZlqiK3O",
+                "dynamicId": "5701c924-5551-409a-bef1-ad55764caa85",
+                "dynamicWalletId": "d8d49053-b814-4595-8223-d7985c5dcb03",
+                "address": "0xEf3Cfa199137387047318a06EFba931dB07e7b4B",
+                "protocolId": "-4VduL02uz-b66t2PvXfc",
+                "Protocol": null,
+                "name": "DEPLOYER",
+                "role": "owner",
+                "createdAt": "2024-02-07T17:15:13.000296Z",
+                "updatedAt": "2024-02-07T17:15:13.000296Z"
+            },
+            {
+                "id": "Qb4F2ag7sWVQGRULG5vuB",
+                "dynamicId": "cc8daf19-bfa9-47b1-a6fd-6b15ab7e5fe8",
+                "dynamicWalletId": "5ab7f4ae-bdb0-4f38-8987-655f7afc5fb2",
+                "address": "0x23e85dB353bFDa25329c4e12b98Aa991F541eA2d",
+                "protocolId": "-4VduL02uz-b66t2PvXfc",
+                "Protocol": null,
+                "name": "TECH MULTISIG",
+                "role": "admin",
+                "createdAt": "2024-02-03T07:47:54.568965Z",
+                "updatedAt": "2024-02-03T07:47:54.568965Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "gN2l9f0Ai8OfnAoR3K1Jx",
+                "protocol_id": "-4VduL02uz-b66t2PvXfc",
+                "audit_name": "CHAINSeCUriTY",
+                "audit_link": "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Dec%20-%20ChainSecurity_Gearbox_Core_V3.pdf",
+                "audit_date": "2023-12-14T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-03-18T16:26:07.493167Z",
+                "updated_at": "2024-03-18T16:26:07.493167Z"
+            },
+            {
+                "id": "DA-_DaEdIfbXzx6VtfceW",
+                "protocol_id": "-4VduL02uz-b66t2PvXfc",
+                "audit_name": "ABDK",
+                "audit_link": "https://github.com/Gearbox-protocol/security/blob/main/audits/2023%20Dec%20-%20ABDK_Gearbox_Core_V3.pdf",
+                "audit_date": "2023-12-10T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-03-18T16:26:07.493167Z",
+                "updated_at": "2024-03-18T16:26:07.493167Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/EuCI0xUutTrJLHBf4zxc0.svg",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/EuCI0xUutTrJLHBf4zxc0.svg",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://gearbox.fi/",
+            "twitter": "https://twitter.com/GearboxProtocol",
+            "discord": "https://discord.com/invite/gearbox",
+            "telegram": "https://t.me/GearboxProtocol"
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "XnMrWKrKXW0iuzOwiL3F7",
+                "vaultCount": 0,
+                "name": "Gearbox Deployer",
+                "address": "0x20Da9f3D7D5CB96C2822338830Cfd6DeE6d508d8",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-03-15T19:54:34.34839Z",
+                "updatedAt": "2024-03-18T16:31:13.856116Z"
+            }
+        ],
+        "tvl": 150166056.42915553,
+        "vaults_amount": 3,
+        "created_at": "2024-02-03T07:47:54.568965Z",
+        "updated_at": "2024-03-18T16:26:07.492911Z"
+    },
+    {
+        "id": "ZN3QFMfoqTKjpXgX5E1ZQ",
+        "name": "PoolTogether",
+        "description": "THE PERMISSIONLESS PROTOCOL 46,000 PEOPLE ARE USING TO WIN BY SAVING",
+        "type": "aggregator",
+        "tagline": "The #1 Protocol for Real Adoption\n\n",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "ZN3QFMfoqTKjpXgX5E1ZQ",
+        "primary_color": "#4C249F",
+        "status": "",
+        "status_message": "Authenticated",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "F4aG7pAxjfNYqOBTlELFV",
+                "dynamicId": "77bf2197-cb4b-4283-a47b-20383c5012d9",
+                "dynamicWalletId": "dd1217dd-6187-4e53-b2cd-6d588b7d7ba5",
+                "address": "0x3994537274f3fF3eefc413E0D669b05D6446D46b",
+                "protocolId": "ZN3QFMfoqTKjpXgX5E1ZQ",
+                "Protocol": null,
+                "name": "Tim",
+                "role": "owner",
+                "createdAt": "2024-02-06T16:14:35.139656Z",
+                "updatedAt": "2024-02-06T16:14:35.139656Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "ABaxS4fP15Rb3Akjw2-jX",
+                "protocol_id": "ZN3QFMfoqTKjpXgX5E1ZQ",
+                "audit_name": "Full List",
+                "audit_link": "https://docs.pooltogether.com/security/audits",
+                "audit_date": "2023-09-01T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-06T17:54:50.837843Z",
+                "updated_at": "2024-02-06T17:54:50.837843Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": [
+            {
+                "id": "H9HBxqY0djrFXhgROj2RH",
+                "protocol_id": "ZN3QFMfoqTKjpXgX5E1ZQ",
+                "chart_title": "PoolTogether v5",
+                "chart_url": "https://dune.com/pooltogether/pooltogether-v5",
+                "is_deleted": false
+            }
+        ],
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/7FxM_acYOFdt0YgIwny80.png",
+            "header": "https://superform-celeste.s3.amazonaws.com/X9cOdQAyG5po3qutVg51g.png",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/7FxM_acYOFdt0YgIwny80.png",
+            "watermark": "https://superform-celeste.s3.amazonaws.com/05mRVVuj4j41kaKux9scc.png"
+        },
+        "links": {
+            "website": "https://pooltogether.com/",
+            "twitter": "https://twitter.com/PoolTogether_",
+            "discord": "",
+            "telegram": "https://t.me/PoolTogetherTelegram"
+        },
+        "chain_ids": [
+            10
+        ],
+        "deployers": [
+            {
+                "id": "HPOPYQi1MUHc6VyZ02J1u",
+                "vaultCount": 0,
+                "name": "PWETH Deployer",
+                "address": "0x13A751faFd4214CfC1f95F7b027Ef432965312c4",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-06T17:39:57.786372Z",
+                "updatedAt": "2024-02-06T17:39:57.786372Z"
+            }
+        ],
+        "tvl": 1157545.4042472334,
+        "vaults_amount": 1,
+        "created_at": "2024-02-06T16:14:35.139656Z",
+        "updated_at": "2024-02-06T17:54:50.837639Z"
+    },
+    {
+        "id": "O2KpGpoeb_V-HOPSRNGgV",
+        "name": "Angle",
+        "description": "ANGLE IS a decentralized stablecoin protocol",
+        "type": "yield",
+        "tagline": "INCREASE YOUr SAVINGS WITH ANGLE",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "O2KpGpoeb_V-HOPSRNGgV",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "wXHI1kXdEr7EoCegtH7xk",
+                "dynamicId": "8a2939de-672f-4dd6-b56e-32cb71494f65",
+                "dynamicWalletId": "0f32611a-d7ac-4a74-8719-3695b2136ce8",
+                "address": "0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185",
+                "protocolId": "O2KpGpoeb_V-HOPSRNGgV",
+                "Protocol": null,
+                "name": "Deployer",
+                "role": "owner",
+                "createdAt": "2024-02-02T07:43:48.020423Z",
+                "updatedAt": "2024-02-02T07:43:48.020423Z"
+            },
+            {
+                "id": "IvIR5rrCbPKBYDGf0RZFu",
+                "dynamicId": "0335c5c8-8a28-4b6c-b970-499bc925086b",
+                "dynamicWalletId": "feb08b64-f1de-4eac-8b9a-014e6a5010fb",
+                "address": "0x8f02b4a44Eacd9b8eE7739aa0BA58833DD45d002",
+                "protocolId": "O2KpGpoeb_V-HOPSRNGgV",
+                "Protocol": null,
+                "name": "pablo",
+                "role": "admin",
+                "createdAt": "2024-02-02T07:43:48.020423Z",
+                "updatedAt": "2024-02-02T07:43:48.020423Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "dW7WfWeeS4gRPJm8x1OkU",
+                "protocol_id": "O2KpGpoeb_V-HOPSRNGgV",
+                "audit_name": "code4rena",
+                "audit_link": "https://code4rena.com/reports/2023-06-angle",
+                "audit_date": "2023-02-01T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-21T19:33:10.54658Z",
+                "updated_at": "2024-02-21T19:33:10.54658Z"
+            },
+            {
+                "id": "YYghAi5BcxcFN9CJ23j96",
+                "protocol_id": "O2KpGpoeb_V-HOPSRNGgV",
+                "audit_name": "Chainsecurity",
+                "audit_link": "https://924174234-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MZrRrYejMtN3SzZU10r%2Fuploads%2Fgit-blob-d7b65a667a47d946739e5e91bf5109c9b5ddaa48%2Fchainsecurity-spring22.pdf?alt=media",
+                "audit_date": "2022-04-01T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-21T19:33:10.54658Z",
+                "updated_at": "2024-02-21T19:33:10.54658Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/hi08_-aoZfgh7Ch4dKpSX.jpeg",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/hi08_-aoZfgh7Ch4dKpSX.jpeg",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://angle.money",
+            "twitter": "https://twitter.com/AngleProtocol",
+            "discord": "https://discord.gg/47mmUUwfMu",
+            "telegram": ""
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "JIvML4JAyQTmUt6PiIKgl",
+                "vaultCount": 0,
+                "name": "deployer",
+                "address": "0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-02T07:43:48.020423Z",
+                "updatedAt": "2024-02-02T07:43:48.020423Z"
+            }
+        ],
+        "tvl": 3859714.848072149,
+        "vaults_amount": 1,
+        "created_at": "2024-02-02T07:43:48.020423Z",
+        "updated_at": "2024-02-21T19:33:10.546076Z"
+    },
+    {
+        "id": "OZF9iEeXVhTIufI375BxQ",
+        "name": "Rocknrolla",
+        "description": "OP agregator",
+        "type": "aggregator",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "OZF9iEeXVhTIufI375BxQ",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "68KA6MgGTxx2ALvGBZ6nZ",
+                "dynamicId": "0441e22d-0490-429e-a4d1-f15cc6e5ebb2",
+                "dynamicWalletId": "830b8807-5cee-4744-8544-7a4a0e30a57c",
+                "address": "0xb1181A2ceC746fe12e1b56862A16e49fBF705Cfe",
+                "protocolId": "OZF9iEeXVhTIufI375BxQ",
+                "Protocol": null,
+                "name": "Rocknrolla",
+                "role": "owner",
+                "createdAt": "2024-02-12T19:27:48.950249Z",
+                "updatedAt": "2024-02-12T19:27:48.950249Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "https://twitter.com/rock_n_rolla_77",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-12T19:27:48.950249Z",
+        "updated_at": "2024-02-12T19:32:50.821996Z"
+    },
+    {
+        "id": "5jlrDhSX5I2t8MfdX_C6M",
+        "name": "Vaultcraft",
+        "description": "VaultCraft is an on-chain, permissionless protocol where anyone can spin up a vault — an automated asset strategy that optimizes returns on user-deposited funds. This is the first open infrastructure allowing for the modularization of vaults using a protocol-endorsed VaultFactory that ensures the safety of the strategy and its contracts. Vaults can interact with a variety of protocols through the ERC4626-Wrapper and are also stackable in design, meaning you can stack on top of other vaults. ",
+        "type": "yield optimizer",
+        "tagline": "Build custom, automated DeFi strategies in minutes with VaultCraft!",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "vaultcraft",
+        "primary_color": "#d9e70b",
+        "status": "",
+        "status_message": "Live",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "HGT3LA-cMM80b7rIH9jDL",
+                "dynamicId": "23e600c0-f562-4b1c-b4e9-18d54c31aca0",
+                "dynamicWalletId": "7a6f2422-88b0-4581-aa19-1ba058d15cca",
+                "address": "0xcA111C5a32E365777a09ABC15F3D2674E98B6EC4",
+                "protocolId": "5jlrDhSX5I2t8MfdX_C6M",
+                "Protocol": null,
+                "name": "Espo1130",
+                "role": "owner",
+                "createdAt": "2024-01-25T18:46:20.932017Z",
+                "updatedAt": "2024-01-25T18:46:20.932017Z"
+            },
+            {
+                "id": "8gtkrRLaU6_zAtmKt5yU3",
+                "dynamicId": "790fccb3-7ccb-493a-b996-da980635a142",
+                "dynamicWalletId": "d025a0a6-b516-4456-a7ed-726d5bd697e2",
+                "address": "0x68075427AaBAadf3cEf1B4919b6eAC5C81509375",
+                "protocolId": "5jlrDhSX5I2t8MfdX_C6M",
+                "Protocol": null,
+                "name": "Alec",
+                "role": "admin",
+                "createdAt": "2024-01-26T19:33:46.635973Z",
+                "updatedAt": "2024-01-26T19:33:46.635973Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "HREyxd83AL1PWREHN9a0E",
+                "protocol_id": "5jlrDhSX5I2t8MfdX_C6M",
+                "audit_name": "BlockSec",
+                "audit_link": "https://1854965950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDCUWGERi18R9emmxWwO2%2Fuploads%2FgF4N9JVFD9kYVbxfqUOJ%2Fblocksec_popcorn_v1.0-signed.pdf?alt=media\u0026token=452a1fd8-84e6-4131-badc-4cfbe2d4584e",
+                "audit_date": "2023-04-18T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-13T18:40:48.081468Z",
+                "updated_at": "2024-02-13T18:40:48.081468Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/01_Of_A4gVcw9wAqxxiu1.png",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/01_Of_A4gVcw9wAqxxiu1.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://app.vaultcraft.io/",
+            "twitter": "https://twitter.com/VaultCraft_io",
+            "discord": "https://discord.gg/49Xrh3Mbge",
+            "telegram": "https://t.me/vaultcraft"
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "lFIckA8jwR0un_IqaDy1P",
+                "vaultCount": 0,
+                "name": "VC Deployer",
+                "address": "0x22f5413C075Ccd56D575A54763831C4c27A37Bdb",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-26T21:58:20.899844Z",
+                "updatedAt": "2024-01-26T21:58:20.899844Z"
+            }
+        ],
+        "tvl": 2805433.9389108582,
+        "vaults_amount": 1,
+        "created_at": "2024-01-25T18:46:20.932017Z",
+        "updated_at": "2024-02-13T18:40:48.076229Z"
+    },
+    {
+        "id": "yh2Mn9XMQ6yNZox_4U2aU",
+        "name": "Moby ETH",
+        "description": "MOBY HOLDERS",
+        "type": "launchpad",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "yh2Mn9XMQ6yNZox_4U2aU",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "-UHlCRDcUujiS5YIJU6SL",
+                "dynamicId": "e472a217-a4f4-46b6-b0bf-d960a5ba1031",
+                "dynamicWalletId": "a70da339-0739-4d02-b89e-2ad8a71e58e4",
+                "address": "0x94BeBD6efFb831a38885ad2C21388B69986eBc6B",
+                "protocolId": "yh2Mn9XMQ6yNZox_4U2aU",
+                "Protocol": null,
+                "name": "ETHTAER",
+                "role": "owner",
+                "createdAt": "2024-02-14T00:16:36.211721Z",
+                "updatedAt": "2024-02-14T00:16:36.211721Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-14T00:16:36.211721Z",
+        "updated_at": "2024-02-14T00:17:18.391931Z"
+    },
+    {
+        "id": "kKjXa8_1vEn_pv1CMcNlN",
+        "name": "Qoda Finance",
+        "description": "QODA is a decentralized lending and borrowing protocol on Arbitrum with fixed rates ",
+        "type": "lending",
+        "tagline": "lending",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "kKjXa8_1vEn_pv1CMcNlN",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "otF_rOzknaDJOdSYbs2Fq",
+                "dynamicId": "59265ac1-d9c6-4ef4-8864-e67474b889e3",
+                "dynamicWalletId": "94d950a5-274e-4d7c-ac0e-7f1dd45f96e6",
+                "address": "0x6be99217c86D8Fb15C8284781f84793abA668966",
+                "protocolId": "kKjXa8_1vEn_pv1CMcNlN",
+                "Protocol": null,
+                "name": "DD",
+                "role": "owner",
+                "createdAt": "2024-02-16T19:26:36.416492Z",
+                "updatedAt": "2024-02-16T19:26:36.416492Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "euK7HwvujO7Pq9S36kd4u",
+                "protocol_id": "kKjXa8_1vEn_pv1CMcNlN",
+                "audit_name": "Halborn",
+                "audit_link": "https://qoda.fi/docs/halborn-smart-contract-audit-report.pdf",
+                "audit_date": "2023-07-15T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-16T19:26:36.416492Z",
+                "updated_at": "2024-02-16T19:26:36.416492Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://qoda.fi/",
+            "twitter": "https://twitter.com/QodaFinance",
+            "discord": "https://discord.com/invite/JJFn8mc9Jd",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-16T19:26:36.416492Z",
+        "updated_at": "2024-02-16T19:26:36.416492Z"
+    },
+    {
+        "id": "uSotAuvp8WFw93zm1vZag",
+        "name": "Avantis",
+        "description": "Avantis is an advanced on-chain DEX for trading and market-making cryptocurrencies, forex and commodities",
+        "type": "derivatives",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "uSotAuvp8WFw93zm1vZag",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "J48VPTzUMttoYFUuq_wU8",
+                "dynamicId": "38099cb0-f78b-4ddd-8fdf-828e67ddd9f0",
+                "dynamicWalletId": "fec53fda-3ad0-4ed5-883c-4e6033f45573",
+                "address": "0x4Bb12cC382E36B4b6faF7BDcA7708969Aed258eF",
+                "protocolId": "uSotAuvp8WFw93zm1vZag",
+                "Protocol": null,
+                "name": "Aram",
+                "role": "owner",
+                "createdAt": "2024-02-17T21:40:16.149854Z",
+                "updatedAt": "2024-02-17T21:40:16.149854Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "LJ7_Inp_KboNVSsQRvfh4",
+                "protocol_id": "uSotAuvp8WFw93zm1vZag",
+                "audit_name": "Zokyo",
+                "audit_link": "https://docs.avantisfi.com/security/audits",
+                "audit_date": "2023-12-23T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-17T21:40:16.149854Z",
+                "updated_at": "2024-02-17T21:40:16.149854Z"
+            },
+            {
+                "id": "YJKCT5uerwK4MgKvECLyg",
+                "protocol_id": "uSotAuvp8WFw93zm1vZag",
+                "audit_name": "Zellic",
+                "audit_link": "https://docs.avantisfi.com/security/audits",
+                "audit_date": "2023-12-01T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-17T21:40:16.149854Z",
+                "updated_at": "2024-02-17T21:40:16.149854Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://avantisfi.com/referral?code=alpha",
+            "twitter": "https://twitter.com/AvantisFinance",
+            "discord": "https://discord.gg/EJwdphqZra",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-17T21:40:16.149854Z",
+        "updated_at": "2024-02-17T21:40:16.149854Z"
+    },
+    {
+        "id": "S5Pt00RgEnFiR2Q6I4fFW",
+        "name": "Test",
+        "description": "Test",
+        "type": "dex",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "S5Pt00RgEnFiR2Q6I4fFW",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "zhxVpMF-OMJspteYUKJT2",
+                "dynamicId": "d967573c-6d8f-4fac-92f6-bd0825a5935c",
+                "dynamicWalletId": "8dd61bd4-66f5-4ce0-90c1-c2e986a51a05",
+                "address": "0xFe752d8F6faEB509D919e286d83815ecC1132012",
+                "protocolId": "S5Pt00RgEnFiR2Q6I4fFW",
+                "Protocol": null,
+                "name": "Test",
+                "role": "owner",
+                "createdAt": "2024-02-19T16:11:50.285575Z",
+                "updatedAt": "2024-02-19T16:11:50.285575Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-19T16:11:50.285575Z",
+        "updated_at": "2024-02-19T16:11:50.285575Z"
+    },
+    {
+        "id": "20ea4lMXEYCmpAhjuLKuD",
+        "name": "Morpho BLUE",
+        "description": "Morpho Blue is a noncustodial lending protocol implemented for the Ethereum Virtual Machine. Morpho Blue offers a new trustless primitive with increased efficiency and flexibility compared to existing lending platforms. It provides permissionless risk management and permissionless market creation with oracle agnostic pricing. It also enables higher collateralization factors, improved interest rates, and lower gas consumption. The protocol is designed to be a simple, immutable, and governance-minimized base layer that allows for a wide variety of other layers to be built on top. Morpho Blue also offers a convenient developer experience with a singleton implementation, callbacks, free flash loans, and account management features.",
+        "type": "lending",
+        "tagline": "The Most SECURE, Efficient, AND Flexible Lending Protocol on Ethereum.",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "morpho",
+        "primary_color": "#2E4DFF",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "GiEtreW5223R0WWyTPGCC",
+                "dynamicId": "11871027-1484-45cb-a924-bcadd4303680",
+                "dynamicWalletId": "1ac57a82-fd84-4bbd-abbb-497d24a8e41d",
+                "address": "0xcBa28b38103307Ec8dA98377ffF9816C164f9AFa",
+                "protocolId": "20ea4lMXEYCmpAhjuLKuD",
+                "Protocol": null,
+                "name": "admin",
+                "role": "admin",
+                "createdAt": "2024-02-06T10:50:36.774086Z",
+                "updatedAt": "2024-02-06T10:50:36.774086Z"
+            },
+            {
+                "id": "zXLU66qEU4DJSg8nL-2he",
+                "dynamicId": "a598e881-6ea2-4b52-8a16-18728be6cf28",
+                "dynamicWalletId": "44d9b98c-f64c-4b94-b1d2-cda3aec1960e",
+                "address": "0x937Ce2d6c488b361825D2DB5e8A70e26d48afEd5",
+                "protocolId": "20ea4lMXEYCmpAhjuLKuD",
+                "Protocol": null,
+                "name": "dEPLOYER",
+                "role": "owner",
+                "createdAt": "2024-02-06T10:50:36.774086Z",
+                "updatedAt": "2024-02-06T10:50:36.774086Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "ahq3VxQspRiE0jdAAEbiM",
+                "protocol_id": "20ea4lMXEYCmpAhjuLKuD",
+                "audit_name": "Morpho Blue Security reviews",
+                "audit_link": "https://docs.morpho.org/concepts/morpho-blue/security/audits",
+                "audit_date": "2023-12-05T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-20T13:51:39.961377Z",
+                "updated_at": "2024-02-20T13:51:39.961377Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": [
+            {
+                "id": "fM_C-JPUfjpUaWC0jTk7D",
+                "protocol_id": "20ea4lMXEYCmpAhjuLKuD",
+                "chart_title": "Morpho blue dune dashboard",
+                "chart_url": "https://dune.com/morpho/morpho-blue-dashboard",
+                "is_deleted": false
+            },
+            {
+                "id": "Dfw0H3g2L3-tM4md48wY1",
+                "protocol_id": "20ea4lMXEYCmpAhjuLKuD",
+                "chart_title": "METAMORPHO VAULT DUNE DASHBOARD",
+                "chart_url": "https://dune.com/morpho/metamorpho-vault-dashboard",
+                "is_deleted": false
+            }
+        ],
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/-SV7BKsbN08y6508qTPYf.png",
+            "header": "https://superform-celeste.s3.amazonaws.com/IV03D0kRaofo9Vb9SvuA-.png",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/-SV7BKsbN08y6508qTPYf.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "HTTPS://MORPHO.ORG",
+            "twitter": "https://twitter.com/MorphoLabs",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "mMle5JGelPwyIp1K7wDCs",
+                "vaultCount": 0,
+                "name": "factory deployer",
+                "address": "0x937Ce2d6c488b361825D2DB5e8A70e26d48afEd5",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-06T10:50:36.774086Z",
+                "updatedAt": "2024-02-06T10:50:36.774086Z"
+            }
+        ],
+        "tvl": 85078111.26038748,
+        "vaults_amount": 6,
+        "created_at": "2024-02-06T10:50:36.774086Z",
+        "updated_at": "2024-02-20T13:51:39.960919Z"
+    },
+    {
+        "id": "k7yQ9oZqF9U0dtm7UAbhw",
+        "name": "test",
+        "description": "test",
+        "type": "bridge",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "k7yQ9oZqF9U0dtm7UAbhw",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "zIsYj9SwESlxPiHHnDY4R",
+                "dynamicId": "f7a68b26-e6ca-4878-bc0e-25eebafeee56",
+                "dynamicWalletId": "cad8d2a5-308c-46df-9a56-ac8d68fb65f2",
+                "address": "0x235e1ECaF69428A0d721E88A287a97a4F2033c2e",
+                "protocolId": "k7yQ9oZqF9U0dtm7UAbhw",
+                "Protocol": null,
+                "name": "gemshodl",
+                "role": "owner",
+                "createdAt": "2024-02-26T16:59:01.043112Z",
+                "updatedAt": "2024-02-26T16:59:01.043112Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://linktr.ee/superform",
+            "twitter": "https://twitter.com/gemshodl",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-26T16:59:01.043112Z",
+        "updated_at": "2024-02-26T16:59:01.043112Z"
+    },
+    {
+        "id": "m68VXXEDcMHmDkoQwOhw9",
+        "name": "Instadapp Lite",
+        "description": "Instadapp Lite is the premier decentralized application for earning yield on your assets! Instadapp Lite utilizes Instadapp's DeFi Smart Layer to create the best DeFi Yield earning strategy utilizing Ethereum's Proof of Stake Rewards and popular lending protocols. Lite enables anyone to access the best yields in DeFi.",
+        "type": "yield_aggregator",
+        "tagline": "The Best DeFi Yields In 1-Click",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "m68VXXEDcMHmDkoQwOhw9",
+        "primary_color": "#2875FD",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "XJus8WEU5gzpkbIvOM3_G",
+                "dynamicId": "cc443db0-f37a-455f-8f4c-020a555965f2",
+                "dynamicWalletId": "4b0086f5-e7cb-4154-93d0-9d7a989f2836",
+                "address": "0x31A7eD459fb11833A997426fD810a5502337ac75",
+                "protocolId": "m68VXXEDcMHmDkoQwOhw9",
+                "Protocol": null,
+                "name": "Aahiknsv",
+                "role": "owner",
+                "createdAt": "2024-02-20T15:47:35.114777Z",
+                "updatedAt": "2024-02-20T15:47:35.114777Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/NwQEWQdTdtdP05pTvVNeO.png",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/NwQEWQdTdtdP05pTvVNeO.png",
+            "watermark": "https://superform-celeste.s3.amazonaws.com/odgqZB0moBE0h8rvpTKx_.png"
+        },
+        "links": {
+            "website": "https://lite.instadapp.io/",
+            "twitter": "https://twitter.com/instadapp",
+            "discord": "https://discord.com/invite/C76CeZc",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": [
+            {
+                "id": "q-tMKFFSyN7m1ve-KxYkf",
+                "vaultCount": 0,
+                "name": " Instadapp: Deployer 1",
+                "address": "0x910E413DBF3F6276Fe8213fF656726bDc142E08E",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-20T15:47:35.114777Z",
+                "updatedAt": "2024-02-20T15:47:35.114777Z"
+            }
+        ],
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-20T15:47:35.114777Z",
+        "updated_at": "2024-02-20T16:39:35.654278Z"
+    },
+    {
+        "id": "9NvQG5BwdE7l1wS4uUd_h",
+        "name": "Mrdinc network",
+        "description": "Universal Yield Marketplace.",
+        "type": "aggregator",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "9NvQG5BwdE7l1wS4uUd_h",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "TPwwS2BFsIfSfKtxVvtjI",
+                "dynamicId": "303b61ec-85ef-4a90-af98-a6372af4fd77",
+                "dynamicWalletId": "f53a4a4e-e1bf-4a3b-b41b-69a11d344b71",
+                "address": "0x57859fce10F760DE8C5CA27b1C5D16c5e127E1e9",
+                "protocolId": "9NvQG5BwdE7l1wS4uUd_h",
+                "Protocol": null,
+                "name": "admin",
+                "role": "owner",
+                "createdAt": "2024-02-21T06:16:55.10612Z",
+                "updatedAt": "2024-02-21T06:16:55.10612Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-21T06:16:55.10612Z",
+        "updated_at": "2024-02-21T06:16:55.10612Z"
+    },
+    {
+        "id": "p2_4-lceW07sBpWNP8v8_",
+        "name": "EMPLIFAI",
+        "description": "EMPLIFAI (EARNING AMPLIFIED VIA ALGORITHMS \u0026 AI) IS THE WORLD’S FIRST HALAL LIQUIDITY HARVESTING PROTOCOL WHERE YOU CAN EARN 5-15% RETURNS FROM LIQUIDITY POOLS.",
+        "type": "yield optimizer",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "p2_4-lceW07sBpWNP8v8_",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "v_HJxYbgyAnZbjxZsQOn0",
+                "dynamicId": "f4e2215f-918f-4cce-b361-3178d984b8fd",
+                "dynamicWalletId": "32375b24-f656-4a32-b044-ac7d8abf9a5c",
+                "address": "0x504AFD735D03b6D4b1aaBd101bC5fD2b34A17fCc",
+                "protocolId": "p2_4-lceW07sBpWNP8v8_",
+                "Protocol": null,
+                "name": "test",
+                "role": "owner",
+                "createdAt": "2024-02-21T08:40:06.392907Z",
+                "updatedAt": "2024-02-21T08:40:06.392907Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "https://twitter.com/MarhabaDeFi",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-21T08:40:06.392907Z",
+        "updated_at": "2024-02-21T08:43:06.013699Z"
+    },
+    {
+        "id": "0M_mqv__cyetbjWhP-Bfn",
+        "name": "gm logal",
+        "description": "oj logal",
+        "type": "farm",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "0M_mqv__cyetbjWhP-Bfn",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2024-02-23T00:00:00Z",
+        "users": [
+            {
+                "id": "xHDFd36JfOmT4n_C4XM1K",
+                "dynamicId": "e82775a5-3560-466c-bdae-b55a133b5b44",
+                "dynamicWalletId": "874e080e-7949-4a1e-bd6c-fb360eab3f42",
+                "address": "0xfE02B7539e483FC6c783eD0aDF81128Be52d9D2D",
+                "protocolId": "0M_mqv__cyetbjWhP-Bfn",
+                "Protocol": null,
+                "name": "logal",
+                "role": "owner",
+                "createdAt": "2024-02-24T04:55:02.116523Z",
+                "updatedAt": "2024-02-24T04:55:02.116523Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-24T04:55:02.116523Z",
+        "updated_at": "2024-02-24T04:58:17.05272Z"
+    },
+    {
+        "id": "REus3D7RtDS9euzmI587v",
+        "name": "Yunus",
+        "description": "User",
+        "type": "aggregator",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "REus3D7RtDS9euzmI587v",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "9KOP0M15YtuN0Kcd0qGgE",
+                "dynamicId": "8fbdd103-2159-42fd-8203-998b1a426166",
+                "dynamicWalletId": "90c686ef-3caa-482e-8799-9d67f5fa35b7",
+                "address": "0xB9ddaa678eFec7697807F87ab6A9ca81567bE058",
+                "protocolId": "REus3D7RtDS9euzmI587v",
+                "Protocol": null,
+                "name": "yunus",
+                "role": "owner",
+                "createdAt": "2024-02-27T16:34:25.046033Z",
+                "updatedAt": "2024-02-27T16:34:25.046033Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "https://twitter.com/Yunus21203161",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-27T16:34:25.046033Z",
+        "updated_at": "2024-02-27T16:34:25.046033Z"
+    },
+    {
+        "id": "QyLqXsgYt-wgqz7ykim_M",
+        "name": "Harvest Finance",
+        "description": "Harvest Finance is an automatic yield farming protocol that helps traders take advantage of the latest DeFi platforms with the highest yield.",
+        "type": "yield_aggregator",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "harvest",
+        "primary_color": "#52ad8a",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2020-08-31T00:00:00Z",
+        "users": [
+            {
+                "id": "xAvPbfJHOo9co-YaWR6JU",
+                "dynamicId": "a2387f9a-d75f-469d-93bb-0c3ffcdbda23",
+                "dynamicWalletId": "a14a1297-1b7c-4742-8ae4-3b4f8c39c73b",
+                "address": "0x6a74649aCFD7822ae8Fb78463a9f2192752E5Aa2",
+                "protocolId": "QyLqXsgYt-wgqz7ykim_M",
+                "Protocol": null,
+                "name": "JasperS13",
+                "role": "owner",
+                "createdAt": "2024-02-23T11:58:33.864945Z",
+                "updatedAt": "2024-02-23T11:58:33.864945Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "2ou6c7CMz0KlfV76_HVhi",
+                "protocol_id": "QyLqXsgYt-wgqz7ykim_M",
+                "audit_name": "CertiK",
+                "audit_link": "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf",
+                "audit_date": "2020-11-14T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-26T12:36:04.159617Z",
+                "updated_at": "2024-02-26T12:36:04.159617Z"
+            },
+            {
+                "id": "-EmUUZeiYp3RSJ6oYI8k_",
+                "protocol_id": "QyLqXsgYt-wgqz7ykim_M",
+                "audit_name": "Haechi",
+                "audit_link": "https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf",
+                "audit_date": "2020-09-28T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-26T12:36:04.159617Z",
+                "updated_at": "2024-02-26T12:36:04.159617Z"
+            },
+            {
+                "id": "sOGYVPIrgTeJxlS2vUuL_",
+                "protocol_id": "QyLqXsgYt-wgqz7ykim_M",
+                "audit_name": "Least Authority",
+                "audit_link": "https://github.com/harvestfi/audits/blob/main/LeastAuthority-Harvest.pdf",
+                "audit_date": "2021-02-16T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-26T12:36:04.159617Z",
+                "updated_at": "2024-02-26T12:36:04.159617Z"
+            },
+            {
+                "id": "70j6QI8p9gmLSbHQLWLLg",
+                "protocol_id": "QyLqXsgYt-wgqz7ykim_M",
+                "audit_name": "PeckShield",
+                "audit_link": "https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf",
+                "audit_date": "2020-09-30T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-26T12:36:04.159617Z",
+                "updated_at": "2024-02-26T12:36:04.159617Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/efqbVP39fxvE9NK5ilxBM.svg",
+            "header": "https://superform-celeste.s3.amazonaws.com/1IYjtoPDZw4XG-HsUpb3P.png",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/efqbVP39fxvE9NK5ilxBM.svg",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://app.harvest.finance/",
+            "twitter": "https://twitter.com/harvest_finance",
+            "discord": "https://discord.com/invite/gzWAG3Wx7Y",
+            "telegram": ""
+        },
+        "chain_ids": [
+            137,
+            8453,
+            42161
+        ],
+        "deployers": [
+            {
+                "id": "h6qUWsMNreRQR2yefWJ4D",
+                "vaultCount": 0,
+                "name": "Old deployer Polygon",
+                "address": "0xf00dD244228F51547f0563e60bCa65a30FBF5f7f",
+                "status": "",
+                "type": "",
+                "createdAt": "2024-01-29T13:39:45.248263Z",
+                "updatedAt": "2024-02-24T15:21:55.117399Z"
+            },
+            {
+                "id": "Av1_AY0lwOL2PrS5sJTrm",
+                "vaultCount": 0,
+                "name": "HF Deployer ARB",
+                "address": "0x6a74649aCFD7822ae8Fb78463a9f2192752E5Aa2",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-02-23T11:58:33.864945Z",
+                "updatedAt": "2024-02-23T11:58:33.864945Z"
+            }
+        ],
+        "tvl": 3619276.328547335,
+        "vaults_amount": 34,
+        "created_at": "2024-02-23T11:58:33.864945Z",
+        "updated_at": "2024-02-26T12:36:04.157797Z"
+    },
+    {
+        "id": "OI-a-RvyUCXD_4CNzesPz",
+        "name": "bbobbi",
+        "description": "hi",
+        "type": "aggregator",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": false,
+        "defillama_id": "",
+        "vanity_url": "OI-a-RvyUCXD_4CNzesPz",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "ntUTsJsrR1ha6Dugv8w_a",
+                "dynamicId": "cd8a8421-0d9f-4d52-ace5-b1a9078c6fb1",
+                "dynamicWalletId": "3896dddc-fd37-4e32-8e41-b9e049380cd7",
+                "address": "0x5E756A3CB21c5Fd471156d5229f09676DAd78500",
+                "protocolId": "OI-a-RvyUCXD_4CNzesPz",
+                "Protocol": null,
+                "name": "bbobbi",
+                "role": "owner",
+                "createdAt": "2024-02-27T16:43:12.822336Z",
+                "updatedAt": "2024-02-27T16:43:12.822336Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "",
+            "twitter": "",
+            "discord": "",
+            "telegram": ""
+        },
+        "chain_ids": [],
+        "deployers": null,
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-27T16:43:12.822336Z",
+        "updated_at": "2024-02-27T16:43:12.822336Z"
+    },
+    {
+        "id": "2Za8_CkeArez-qVozJjdG",
+        "name": "beefy",
+        "description": "Beefy is a Decentralized, Multichain Yield Optimizer that allows its users to earn compound interest on their crypto holdings. Beefy earns you the highest APYs with safety and efficiency in mind.",
+        "type": "aggregator",
+        "tagline": "beefy is the multichain yield optimizer",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "2Za8_CkeArez-qVozJjdG",
+        "primary_color": "",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "0001-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "OC4iEXLccz-AMONQUk98N",
+                "dynamicId": "5d567845-9e9e-4275-b50c-3e90be902be0",
+                "dynamicWalletId": "4840eea4-9ab6-470a-932c-67c99472aaa9",
+                "address": "0x0C7694d5CB77E75C93C8FEde6145a0bD39b2f8F4",
+                "protocolId": "2Za8_CkeArez-qVozJjdG",
+                "Protocol": null,
+                "name": "frondoto",
+                "role": "owner",
+                "createdAt": "2024-02-29T15:50:06.579783Z",
+                "updatedAt": "2024-02-29T15:50:06.579783Z"
+            }
+        ],
+        "audits": [
+            {
+                "id": "SSJDtx7SMwYQs90H7NSwt",
+                "protocol_id": "2Za8_CkeArez-qVozJjdG",
+                "audit_name": "openzepellin",
+                "audit_link": "https://github.com/beefyfinance/beefy-audits/tree/master",
+                "audit_date": "2023-06-27T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-29T15:50:06.579783Z",
+                "updated_at": "2024-02-29T15:50:06.579783Z"
+            },
+            {
+                "id": "hTyt2sAhf8dkrVzVDcSkD",
+                "protocol_id": "2Za8_CkeArez-qVozJjdG",
+                "audit_name": "zellic",
+                "audit_link": "https://github.com/beefyfinance/beefy-audits/tree/master",
+                "audit_date": "2023-08-08T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-29T15:50:06.579783Z",
+                "updated_at": "2024-02-29T15:50:06.579783Z"
+            },
+            {
+                "id": "NIL-dqOGw5Vk2XrKkTbly",
+                "protocol_id": "2Za8_CkeArez-qVozJjdG",
+                "audit_name": "certik",
+                "audit_link": "https://github.com/beefyfinance/beefy-audits/tree/master",
+                "audit_date": "2021-05-05T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-29T15:50:06.579783Z",
+                "updated_at": "2024-02-29T15:50:06.579783Z"
+            },
+            {
+                "id": "SgOCmyCJqeXbHbmbXXPA0",
+                "protocol_id": "2Za8_CkeArez-qVozJjdG",
+                "audit_name": "defiyield",
+                "audit_link": "https://github.com/beefyfinance/beefy-audits/tree/master",
+                "audit_date": "2020-12-10T00:00:00Z",
+                "is_deleted": false,
+                "created_at": "2024-02-29T15:50:06.579783Z",
+                "updated_at": "2024-02-29T15:50:06.579783Z"
+            }
+        ],
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "",
+            "header": "",
+            "avatar": "",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://beefy.com/",
+            "twitter": "https://twitter.com/beefyfinance",
+            "discord": "http://discord.gg/beefyfinance",
+            "telegram": "http://t.me/beefyfinance"
+        },
+        "chain_ids": [],
+        "deployers": [
+            {
+                "id": "Gbj4lPfmOkBUZFFAijVAu",
+                "vaultCount": 0,
+                "name": "arb deployer",
+                "address": "0xD927cE147f098cE634301e6c4281541b1939a132",
+                "status": "",
+                "type": "EOA",
+                "createdAt": "2024-01-29T05:18:23.521529Z",
+                "updatedAt": "2024-02-29T15:50:06.586858Z"
+            }
+        ],
+        "tvl": 0,
+        "vaults_amount": 0,
+        "created_at": "2024-02-29T15:50:06.579783Z",
+        "updated_at": "2024-02-29T15:50:06.579783Z"
+    },
+    {
+        "id": "5KJ3bV6KfMMbwmCLFJDIX",
+        "name": "MakerDAO",
+        "description": "Builders of Dai, a digital currency that can be used by anyone, anywhere, anytime.",
+        "type": "cdp",
+        "tagline": "",
+        "is_hidden": false,
+        "is_authenticated": true,
+        "defillama_id": "",
+        "vanity_url": "maker",
+        "primary_color": "#1AAB9B",
+        "status": "",
+        "status_message": "",
+        "deploy_date": "2015-01-01T00:00:00Z",
+        "users": [
+            {
+                "id": "lcgj942hQJsDeavKPvWPL",
+                "dynamicId": "cee9c797-4c17-40e3-b169-4aeea4757397",
+                "dynamicWalletId": "12adb6c5-82f8-4aee-9d84-0fbd68ea31c0",
+                "address": "0x89E14956C6fBB814B281B0A1598E11297713c6d0",
+                "protocolId": "5KJ3bV6KfMMbwmCLFJDIX",
+                "Protocol": null,
+                "name": "tadeo",
+                "role": "owner",
+                "createdAt": "2024-03-01T16:09:59.82999Z",
+                "updatedAt": "2024-03-01T16:09:59.82999Z"
+            }
+        ],
+        "audits": null,
+        "exploits": null,
+        "faq": null,
+        "analytics": null,
+        "graphics": {
+            "icon": "https://superform-celeste.s3.amazonaws.com/KsHqARe9KAkzTqGgGpD3u.png",
+            "header": "",
+            "avatar": "https://superform-celeste.s3.amazonaws.com/KsHqARe9KAkzTqGgGpD3u.png",
+            "watermark": ""
+        },
+        "links": {
+            "website": "https://makerdao.com/",
+            "twitter": "https://twitter.com/MakerDAO",
+            "discord": "https://discord.gg/KNZjwKKZBm",
+            "telegram": ""
+        },
+        "chain_ids": [
+            1
+        ],
+        "deployers": [
+            {
+                "id": "4yjyO87wZQnAca-baT8YA",
+                "vaultCount": 0,
+                "name": "sDAI deployer",
+                "address": "0x3249936bDdF8bF739d3f06d26C40EEfC81029BD1",
+                "status": "",
+                "type": "",
+                "createdAt": "2024-03-01T16:09:59.82999Z",
+                "updatedAt": "2024-03-01T16:09:59.82999Z"
+            }
+        ],
+        "tvl": 1017007426.2306908,
+        "vaults_amount": 1,
+        "created_at": "2024-03-01T16:09:59.82999Z",
+        "updated_at": "2024-03-06T21:55:29.687665Z"
+    }
+]
