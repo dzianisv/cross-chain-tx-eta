@@ -17,7 +17,7 @@ const { getTransactionsCached, getTransactionCached } = require('./scan');
 // Arbitrum
 // Bridge
 
-class SettlementPhaseNotFound extends Error {
+class ApiPhaseNotFound extends Error {
     constructor(message) {
         super(message);
         this.name = 'SettlementTimeNotFound';
@@ -50,7 +50,7 @@ function getSettlementTimestamp(transaction) {
         }
     }
     if (phaseFound) {
-        throw SettlementPhaseNotFound();
+        throw ApiPhaseNotFound();
     } else {
         throw SettlementTimeNotFound();
     }
@@ -75,6 +75,31 @@ function getInitiationTimestamp(transaction) {
     throw InitiationTimeNotFound();
 }
 
+function getUsedArbitraryMessagingBridges(transaction) {
+    const result = [];
+  
+    if (transaction && transaction.phases) {
+      const updatingPayloadPhase = transaction.phases.find(phase => phase.name === 'Updating Payload');
+  
+      if (updatingPayloadPhase && updatingPayloadPhase.rows) {
+        const destinationMessageStatus = updatingPayloadPhase.rows.find(row => row.label === 'Destination Message Status');
+        const destinationProof1Status = updatingPayloadPhase.rows.find(row => row.label === 'Destination Proof 1 Status');
+  
+        if (!destinationMessageStatus) {
+            ApiPhaseNotFound("Destination Message Status is not found");
+        }
+  
+        if (!destinationProof1Status) {
+            ApiPhaseNotFound("Destination Proof Status is not found");
+        }
+
+        return [destinationMessageStatus.name, destinationProof1Status.name];
+      }
+    }
+  
+    return result;
+  }
+
 async function main() {
     const txType = "deposit";
     const srcChainId = 0;
@@ -90,13 +115,14 @@ async function main() {
             const transaction = await getTransactionCached(txMetadata.transaction_hash);
             const initiationTimestamp = getInitiationTimestamp(transaction);
             const settlementTimestamp = getSettlementTimestamp(transaction);
-        
+            const bridges = getUsedArbitraryMessagingBridges(transaction);
+
             const delay = settlementTimestamp - initiationTimestamp;
 
-            console.log(`${txMetadata.protocol} @ ${txMetadata.from_chain} -> ${txMetadata.to_chain} delay ${delay}s`, initiationTimestamp, settlementTimestamp);
+            console.log(`${txMetadata.protocol} @ ${txMetadata.from_chain} -> ${txMetadata.to_chain} delay ${delay}s`, bridges);
             break;
         } catch  (err) {
-            if (err instanceof SettlementTimeNotFound || err instanceof SettlementPhaseNotFound) {
+            if (err instanceof SettlementTimeNotFound || err instanceof ApiPhaseNotFound) {
                 continue;
             } 
         }
