@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const { getTransactionsCached, getTransactionCached } = require('./scan');
+const { SettlementTimeNotFound, TxMetadata } = require('./transaction');
 
 /* reate a script using data from all cross-chain transactions obtained in the Superscan API that takes in 
  - a source chain id, 
@@ -17,132 +18,39 @@ const { getTransactionsCached, getTransactionCached } = require('./scan');
 // Arbitrum
 // Bridge
 
-class ApiPhaseNotFound extends Error {
-    constructor(message) {
-        super(message);
-        this.name = 'SettlementTimeNotFound';
-        this.message = message || 'Settlement time not found';
-    }
-}
-
-class SettlementTimeNotFound extends Error {
-    constructor(message) {
-        super(message);
-        this.name = 'SettlementTimeNotFound';
-        this.message = message || 'Settlement time not found';
-    }
-}
-
-function getSettlementTimestamp(transaction) {
-    const phaseFound = true;
-
-    for (const phase of transaction.phases) {
-        if (phase.name != 'Settlement') {
-            continue;
-        }
-
-        for (const row of phase.rows) {
-            if (row.label != "Settlement Time") {
-                continue;
-            }
-
-            return parseInt(row.value);
-        }
-    }
-    if (phaseFound) {
-        throw ApiPhaseNotFound();
-    } else {
-        throw SettlementTimeNotFound();
-    }
-}
-
-function getBridge(transaction) {
-    const result = [];
-  
-    if (transaction && transaction.phases) {
-      const initiationPhase = transaction.phases.find(phase => phase.name === 'Initiation');
-  
-      if (initiationPhase && initiationPhase.rows) {
-        const bridge = initiationPhase.rows.find(row => row.label === 'Bridge');
-  
-        return bridge.name;
-      }
-    }
-
-    throw ApiPhaseNotFound("'Bridge' not found");
-}
-
-class InitiationTimeNotFound extends Error {
-    constructor(message) {
-        super(message);
-        this.name = 'InitiationTimeNotFound';
-        this.message = message || 'Initiation time not found';
-    }
-}
-
-function getInitiationTimestamp(transaction) {
-    console.log(JSON.stringify(transaction, null, 2));
-
-    for (const row of transaction.rows) {
-        if (row.label == "Initiation Timestamp") {
-            return parseInt(row.value);
-        }
-    }
-    throw InitiationTimeNotFound();
-}
-
-function getUsedArbitraryMessagingBridges(transaction) {
-    const result = [];
-  
-    if (transaction && transaction.phases) {
-      const updatingPayloadPhase = transaction.phases.find(phase => phase.name === 'Updating Payload');
-  
-      if (updatingPayloadPhase && updatingPayloadPhase.rows) {
-        const destinationMessageStatus = updatingPayloadPhase.rows.find(row => row.label === 'Destination Message Status');
-        const destinationProof1Status = updatingPayloadPhase.rows.find(row => row.label === 'Destination Proof 1 Status');
-  
-        if (!destinationMessageStatus) {
-            ApiPhaseNotFound("Destination Message Status is not found");
-        }
-  
-        if (!destinationProof1Status) {
-            ApiPhaseNotFound("Destination Proof Status is not found");
-        }
-
-        return [destinationMessageStatus.name, destinationProof1Status.name];
-      }
-    }
-  
-    return result;
-  }
 
 async function main() {
-    const txType = "deposit";
-    const srcChainId = 0;
-    const destChainId = 1;
-    const protocol = '8CaGt3W1lYnEPLDU-8uG-'; //Exactly protocol
-    const liquidityBridge = 'Accross'; // Across
+    const type = "deposit";
+    const srcChain = 'Arbitrum';
+    const dstChain = 'Optimism';
+    const protocol = 'exactly protocol';
+    const bridge = 'Accross'; // Across
     const amb = ['LayerZero', 'Hyperlane'];
+
 
     const transactions = await getTransactionsCached();
 
-    for (let txMetadata of transactions) {
+    for (let tx of transactions) {
+        if (tx.from_chain != srcChain || tx.to_chain != dstChain || tx.protocol != protocol) {
+            console.log("Skipping ", tx.transaction_hash, tx.from_chain, tx.to_chain, tx.protocol);
+            continue;
+        }
+
         try {
-            const transaction = await getTransactionCached(txMetadata.transaction_hash);
-            const initiationTimestamp = getInitiationTimestamp(transaction);
-            const settlementTimestamp = getSettlementTimestamp(transaction);
-            
-            const bridge = getBridge(transaction);
-            const amb = getUsedArbitraryMessagingBridges(transaction);
+            const txDetails = await getTransactionCached(tx.transaction_hash);
+            const txMetadata = new TxMetadata(tx, txDetails);
+            if (txMetadata.matches(type, protocol, srcChain, dstChain, bridge, amb)) {
+                console.log(txMetadata);
+                break;
+            }
 
-            const delay = settlementTimestamp - initiationTimestamp;
-
-            console.log(`${txMetadata.protocol} @ ${txMetadata.from_chain} -> ${txMetadata.to_chain} delay ${delay}s`, bridge, amb);
-            break;
-        } catch  (err) {
-            if (err instanceof SettlementTimeNotFound || err instanceof ApiPhaseNotFound) {
+        } catch (err) {
+            if (err instanceof SettlementTimeNotFound) {
                 continue;
-            } 
+            } else {
+                console.error(err);
+                break;
+            }
         }
     }
 }

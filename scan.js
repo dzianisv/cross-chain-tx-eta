@@ -57,7 +57,8 @@ const getTransactionsCached = cachingWrapper(getTransactions);
  * @returns {Promise<object>}
  */
 async function getTransactionApi(txId) {
-    const response = await fetch(`https://api.superform.xyz/explorer/transaction/${txId}`, {
+    const url = `https://api.superform.xyz/explorer/transaction/${txId}`;
+    const response = await fetch(url, {
         "credentials": "omit",
         "headers": {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0",
@@ -70,7 +71,7 @@ async function getTransactionApi(txId) {
     });
 
     if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`GET ${url} status: ${response.status}`);
     }
 
     return (await response.json())[0];
