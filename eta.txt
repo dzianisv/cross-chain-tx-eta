@@ -1,0 +1,89 @@
+Skipping  withdraw null optimism polygon 0x27ad63b60da28eabbd1d8b8a9ff0d7d825130f066093010af14fb02f32492cf1
+Skipping  withdraw yearn arbitrum arbitrum 0x47543626cb888497e11c352dd5da4cd9b915a6bd9d4f00d036afd254ad891db4
+Skipping  withdraw exactly protocol optimism binance 0x586ee29daad95ba76d90b98d52945f031f29bba7042a981b1a022b8b31fb5daa
+Skipping  withdraw yearn polygon optimism 0x3408589ea4be4f57c7d0c9ebabbb6eb8315558f2f019238a468b8856fedc4f71
+Skipping  withdraw exactly protocol optimism polygon 0x77796aee99ba3fcc5cd8164a55c347c812a77238ada9fae2aa8c683136c5b4cf
+Skipping  withdraw exactly protocol optimism arbitrum 0x37d1045ac7542e4995b64ed439e85edb14a3e65f4a77acb4c08551fc2f73d368
+Skipping  withdraw exactly protocol optimism base 0x45ef3852c99b1e39338f17f951d99ffae4f7bd06128cef05fa0ab253100af06c
+Skipping  withdraw aloe base base 0xd3576c3df30c946abc6357ade5d4bd8917fb90f70299a035294666ec933cb5b1
+Skipping  withdraw yearn polygon polygon 0xe083a25aa06dbf000e76701303738ae0fd5d78acd96e8fb948e51d2fd7ffd069
+Skipping  withdraw aloe arbitrum arbitrum 0x13de0be7885cea4363b8f12f6cd6afb3cd75a62a03116f80228871b7fa3e5476
+Matched transaction TxMetadata {
+  srcChain: 'optimism',
+  dstChain: 'arbitrum',
+  protocol: 'exactly protocol',
+  initiationTimestamp: 1711422073000,
+  settlementTimestamp: 1711423425000,
+  hash: '0x3cd17059c80f32d792d33bb862f5d9ccf50e867c22d91acdd9c409ed2b5f5cb1',
+  type: 'deposit',
+  bridge: 'stargate',
+  amb: [ 'layerzero', 'hyperlane' ]
+} time 1352000ms
+Skipping  withdraw harvest finance arbitrum arbitrum 0xc11f2dc094758c7c5893961e79375abcbe90944fd81c83359e3fb3999e6f378f
+Skipping  withdraw aloe optimism optimism 0xaf5c7bd314eea2673792301b8e3507bb769a0ff95bd1f34af898a0e698d0ebde
+Skipping  withdraw aloe optimism base 0xa36caa3ba310c74711328a5bf2bc38b4fbc5d8546877e5dec3ec6178a27cdcfb
+Skipping  withdraw aloe base optimism 0xac82a3a1a26937001d3d63999f7bf07c7652f54f8b85e3cc5b61b677ca792fc3
+Skipping  withdraw exactly protocol optimism base 0xa0b628324f9b06c9be4a4c5edabd9e8c7f68fe26a52040a8703ea630ba55eaf5
+Skipping  withdraw exactly protocol optimism base 0xa0b628324f9b06c9be4a4c5edabd9e8c7f68fe26a52040a8703ea630ba55eaf5
+Skipping  withdraw aloe optimism base 0x05cab7d3b56911a00b5db63d62b4f9b46c98e7009041f1a5ac60e4ea6404989c
+Skipping  withdraw aloe arbitrum base 0x05cab7d3b56911a00b5db63d62b4f9b46c98e7009041f1a5ac60e4ea6404989c
+Skipping  withdraw pooltogether optimism base 0x2f8c485cc9904b46b8517125bd76dbd1fe2d047f6b85dfb0783ad732debbfe00
+Skipping  withdraw pooltogether optimism arbitrum 0xaf6e8422ac6776173e86689b05d87115feb949e1e658078e2b04bb3a7e419ebc
+Skipping  withdraw harvest finance arbitrum arbitrum 0x8fe53ec8d47bfc80b6d9bd9a53d141b213f5f2136440a5bbaeb6d3b42de540c6
+Skipping  withdraw exactly protocol optimism arbitrum 0xbcd67b26390da97e39ac9cc3b6a91505f55b4d4aeb87d7ef08ec79751c978b4c
+Skipping  withdraw yearn polygon arbitrum 0x3231cc27eb3d9367bb1269b453de5613471897adef0e3cd3ab4f17ca968d585d
+Skipping  withdraw null arbitrum optimism 0x7d65689f110629bc07328727f6e4f113fffeb81182a1a995762d7c44c5fb150c
+Matched transaction TxMetadata {
+  srcChain: 'optimism',
+  dstChain: 'arbitrum',
+  protocol: 'exactly protocol',
+  initiationTimestamp: 1711415772000,
+  settlementTimestamp: 1711416064000,
+  hash: '0x640d794f9e9c4ca82b84948381a3216723a3e7ced7f74f994c68f79572e07df4',
+  type: 'deposit',
+  bridge: 'stargate',
+  amb: [ 'layerzero', 'hyperlane' ]
+} time 292000ms
+Skipping  withdraw yearn polygon arbitrum 0xa4e25f17860a4878258ce6470e0baa2c491e25b56ef42f5267935756d7731c7d
+Matched transaction TxMetadata {
+  srcChain: 'optimism',
+  dstChain: 'arbitrum',
+  protocol: 'exactly protocol',
+  initiationTimestamp: 1711415483000,
+  settlementTimestamp: 1711415795000,
+  hash: '0xfd904b6bcb23bae7aa005cc5f0332408aec8910b8ec78946eea2c7f8bf22363c',
+  type: 'deposit',
+  bridge: 'stargate',
+  amb: [ 'layerzero', 'hyperlane' ]
+} time 312000ms
+Skipping  withdraw yearn polygon base 0x32dd86b427678283d51298a6aa9d72b83d3caae9a181b796fa248b129ceb2f8e
+Skipping  withdraw yearn polygon polygon 0x2502fb84451cd33f5d06c213c5fd7799411465c6811f21471bdc952c176faa5f
+Skipping  withdraw sommelier arbitrum arbitrum 0xee0658de078c092b9c77dd2c8ce5a113aa2454a79122c0f1d7d4d98a67b7e9df
+Skipping  withdraw aloe arbitrum arbitrum 0x8c48a87cdc8d6ff6b2d7dd04ee5fbef417f54b956fb6fcdebe5c8fbe0c619613
+Skipping  withdraw aloe arbitrum arbitrum 0x9b5f416841a4f0ac4c29a14da99e90d16bcfc8ba7b80ed2c4bd56ccc711aac7b
+Skipping  withdraw exactly protocol optimism arbitrum 0x0e62808822bb1e3c6c1afc86102c2a7ca9fc212a5a2d2fd9e480a8b97fdecaa8
+Matched transaction TxMetadata {
+  srcChain: 'optimism',
+  dstChain: 'arbitrum',
+  protocol: 'exactly protocol',
+  initiationTimestamp: 1711412127000,
+  settlementTimestamp: 1711412389000,
+  hash: '0x2f5f91d6acbdd1d78c6a0e9940253fc783751b40fbe858a461cd3c9d1ea4b36b',
+  type: 'deposit',
+  bridge: 'stargate',
+  amb: [ 'layerzero', 'hyperlane' ]
+} time 262000ms
+Skipping  withdraw aloe base arbitrum 0xad96742475cf614048ac19a44d3c3f67a6fbed6334006eacde229207ef13b1a0
+Matched transaction TxMetadata {
+  srcChain: 'optimism',
+  dstChain: 'arbitrum',
+  protocol: 'exactly protocol',
+  initiationTimestamp: 1711410737000,
+  settlementTimestamp: 1711410958000,
+  hash: '0xcdcc9aeac687fb0bc2c52d3b6aba54779aa638f61677610ff373445082b6e5e2',
+  type: 'deposit',
+  bridge: 'stargate',
+  amb: [ 'layerzero', 'hyperlane' ]
+} time 221000ms
+Skipping  withdraw exactly protocol optimism arbitrum 0xa3a52d8ed4c2cf7ca60b6c65f215ab4a624d230c77d897294af74915269e1b7f
+average confirmation time for deposit exactly protocol @ optimism->arbitrum over stargate, layerzero,hyperlane is 487800ms
