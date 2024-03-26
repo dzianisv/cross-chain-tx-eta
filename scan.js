@@ -42,10 +42,11 @@ async function getTransactions() {
     const txs = await getTransactionsApi();
 
     return txs.map(e => ({
-        transaction_hash: e.transaction_hash,
-        from_chain: chainsManager.getChainNameById(e.from_chain),
-        to_chain: chainsManager.getChainNameById(e.to_chain),
-        protocol: protocolsManager.getProtocolNameById(e.protocol)
+        hash: e.transaction_hash,
+        dstChain: chainsManager.getChainNameById(e.from_chain),
+        srcChain: chainsManager.getChainNameById(e.to_chain),
+        protocol: protocolsManager.getProtocolNameById(e.protocol),
+        type: e.tx_type === 1 ? 'withdraw' : 'deposit'
     }));
 }
 

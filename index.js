@@ -24,21 +24,22 @@ async function main() {
     const srcChain = 'Arbitrum';
     const dstChain = 'Optimism';
     const protocol = 'exactly protocol';
-    const bridge = 'Accross'; // Across
+    const bridge = 'Accross';
     const amb = ['LayerZero', 'Hyperlane'];
 
 
     const transactions = await getTransactionsCached();
 
     for (let tx of transactions) {
-        if (tx.from_chain != srcChain || tx.to_chain != dstChain || tx.protocol != protocol) {
-            console.log("Skipping ", tx.transaction_hash, tx.from_chain, tx.to_chain, tx.protocol);
+        if (tx.srcChain != srcChain || tx.dstChain != dstChain || tx.protocol != protocol, tx.type != type) {
+            console.log("Skipping ", tx.type, tx.protocol, tx.srcChain, tx.dstChain, tx.hash);
             continue;
         }
 
         try {
-            const txDetails = await getTransactionCached(tx.transaction_hash);
+            const txDetails = await getTransactionCached(tx.hash);
             const txMetadata = new TxMetadata(tx, txDetails);
+
             if (txMetadata.matches(type, protocol, srcChain, dstChain, bridge, amb)) {
                 console.log(txMetadata);
                 break;
