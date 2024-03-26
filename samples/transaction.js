@@ -1,4 +1,4 @@
-await fetch("https://api.superform.xyz/explorer/transaction/0x081456c377472e06505981d2c66b22e818fb534358e3cd8e371177ca10dec20d", {
+await fetch("https://api.superform.xyz/explorer/transaction/0xd2124914a25eb78ae5a89dd087dc765298e07e9df5a533023468f6d04ea5f4c2", {
     "credentials": "omit",
     "headers": {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0",

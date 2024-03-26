@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "name": "superscan-estimation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dzianisv/cross-chain-tx-eta.git",
+  "author": "Den <2119348+dzianisv@users.noreply.github.com>",
+  "license": "MIT"
+}
