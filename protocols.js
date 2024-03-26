@@ -33,7 +33,7 @@ class ProtocolsManager {
 
     getProtocolNameById(protocolId) {
         const protocol = this.protocolsMap[protocolId];
-        return protocol ? protocol.name : null;
+        return protocol ? protocol.name.toLowerCase() : null;
     }
 }
 

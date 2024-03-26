@@ -21,15 +21,15 @@ const { SettlementTimeNotFound, TxMetadata } = require('./transaction');
 
 async function main() {
     const type = "deposit";
-    const srcChain = 'Arbitrum';
-    const dstChain = 'Optimism';
+    const srcChain = 'optimism';
+    const dstChain = 'arbitrum';
     const protocol = 'exactly protocol';
-    const bridge = 'Accross';
-    const amb = ['LayerZero', 'Hyperlane'];
+    const bridge = 'stargate';
+    const amb = ['layerzero', 'hyperlane'];
 
 
     const transactions = await getTransactionsCached();
-
+    const matchedTx = [];
     for (let tx of transactions) {
         if (tx.srcChain != srcChain || tx.dstChain != dstChain || tx.protocol != protocol, tx.type != type) {
             console.log("Skipping ", tx.type, tx.protocol, tx.srcChain, tx.dstChain, tx.hash);
@@ -41,10 +41,9 @@ async function main() {
             const txMetadata = new TxMetadata(tx, txDetails);
 
             if (txMetadata.matches(type, protocol, srcChain, dstChain, bridge, amb)) {
-                console.log(txMetadata);
-                break;
+                console.log('Matched transaction', txMetadata, `time ${txMetadata.getTime()}ms`);
+                matchedTx.push(txMetadata);
             }
-
         } catch (err) {
             if (err instanceof SettlementTimeNotFound) {
                 continue;
@@ -54,6 +53,10 @@ async function main() {
             }
         }
     }
+
+    const sum = matchedTx.reduce((acc, tx) => acc + tx.getTime(), 0);
+    const average = sum / matchedTx.length;
+    console.log(`average confirmation time for ${type} ${protocol} @ ${srcChain}->${dstChain} over ${bridge}, ${amb} is ${average}ms`);
 }
 
 main().catch(console.error);

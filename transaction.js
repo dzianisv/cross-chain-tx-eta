@@ -50,7 +50,7 @@ function getBridge(transaction) {
         if (initiationPhase && initiationPhase.rows) {
             const bridge = initiationPhase.rows.find(row => row.label === 'Bridge');
 
-            return bridge.name;
+            return bridge.name.toLowerCase();
         }
     }
 
@@ -84,7 +84,7 @@ function getUsedArbitraryMessagingBridges(transaction) {
                 ApiPhaseNotFound("Destination Proof Status is not found");
             }
 
-            return [destinationMessageStatus.name, destinationProof1Status.name];
+            return [destinationMessageStatus.name.toLowerCase(), destinationProof1Status.name.toLowerCase()];
         }
     }
 
@@ -92,9 +92,9 @@ function getUsedArbitraryMessagingBridges(transaction) {
 }
 
 class TxMetadata {
-    construct(tx1 /* returned by /transactions */, tx2 /* object returned by /tx/{hash} */) {
-        this.srcChain = tx1.from_chain;
-        this.dstChain = tx1.to_chain;
+    constructor(tx1 /* returned by /transactions */, tx2 /* object returned by /tx/{hash} */) {
+        this.srcChain = tx1.srcChain;
+        this.dstChain = tx1.dstChain;
         this.protocol = tx1.protocol;
         this.initiationTimestamp = getInitiationTimestamp(tx2);
         this.settlementTimestamp = getSettlementTimestamp(tx2);
@@ -126,12 +126,16 @@ class TxMetadata {
         }
 
         for (const a of amb) {
-            if (!this.amb.contains(a)) {
+            if (!this.amb.includes(a)) {
                 return false;
             }
         }
 
         return true;
+    }
+
+    getTime() {
+        return this.settlementTimestamp - this.initiationTimestamp;
     }
 }
 

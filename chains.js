@@ -43,7 +43,7 @@ class ChainsManager {
   
     getChainNameById(chainId) {
       const chain = this.chainsMap[chainId];
-      return chain ? chain.name : null;
+      return chain ? chain.name.toLowerCase(): null;
     }
   }
 
