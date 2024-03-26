@@ -56,6 +56,22 @@ function getSettlementTimestamp(transaction) {
     }
 }
 
+function getBridge(transaction) {
+    const result = [];
+  
+    if (transaction && transaction.phases) {
+      const initiationPhase = transaction.phases.find(phase => phase.name === 'Initiation');
+  
+      if (initiationPhase && initiationPhase.rows) {
+        const bridge = initiationPhase.rows.find(row => row.label === 'Bridge');
+  
+        return bridge.name;
+      }
+    }
+
+    throw ApiPhaseNotFound("'Bridge' not found");
+}
+
 class InitiationTimeNotFound extends Error {
     constructor(message) {
         super(message);
@@ -115,11 +131,13 @@ async function main() {
             const transaction = await getTransactionCached(txMetadata.transaction_hash);
             const initiationTimestamp = getInitiationTimestamp(transaction);
             const settlementTimestamp = getSettlementTimestamp(transaction);
-            const bridges = getUsedArbitraryMessagingBridges(transaction);
+            
+            const bridge = getBridge(transaction);
+            const amb = getUsedArbitraryMessagingBridges(transaction);
 
             const delay = settlementTimestamp - initiationTimestamp;
 
-            console.log(`${txMetadata.protocol} @ ${txMetadata.from_chain} -> ${txMetadata.to_chain} delay ${delay}s`, bridges);
+            console.log(`${txMetadata.protocol} @ ${txMetadata.from_chain} -> ${txMetadata.to_chain} delay ${delay}s`, bridge, amb);
             break;
         } catch  (err) {
             if (err instanceof SettlementTimeNotFound || err instanceof ApiPhaseNotFound) {
