@@ -33,6 +33,8 @@ class ChainsManager {
        * }]
        */
       const chainsMap = {};
+
+      //TODO: use API with caching to request chains, not a static file
       const chainsMetadata = require("./samples/chains.json");
       for (const item of chainsMetadata) {
         chainsMap[item.chainId] = item;

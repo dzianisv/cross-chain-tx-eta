@@ -23,6 +23,8 @@ class ProtocolsManager {
          }]
          */
         const protocolsMap = {};
+
+        // TODO: use API with caching to request protocols
         const protocolsMetadata = require("./samples/protocols.json");
         for (const item of protocolsMetadata) {
             protocolsMap[item.id] = item;
