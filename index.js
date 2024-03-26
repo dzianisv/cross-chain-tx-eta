@@ -12,14 +12,8 @@ const { SettlementTimeNotFound, TxMetadata } = require('./transaction');
  @returns an estimate of the time until the transaction can be processed. 
 */
 
-
-// example = https://scan.superform.xyz/tx/0xd2124914a25eb78ae5a89dd087dc765298e07e9df5a533023468f6d04ea5f4c2/?superformId=62771017355677689998155016160060914598077108308374651991157
-// Optimism
-// Arbitrum
-// Bridge
-
-
 async function main() {
+    // hardcoded for demo
     const type = "deposit";
     const srcChain = 'optimism';
     const dstChain = 'arbitrum';
@@ -27,9 +21,10 @@ async function main() {
     const bridge = 'stargate';
     const amb = ['layerzero', 'hyperlane'];
 
-
+    // TODO: requesst more transaction, implement pagging support, for some input params there could be 0 transactions in first 100
     const transactions = await getTransactionsCached();
     const matchedTx = [];
+
     for (let tx of transactions) {
         if (tx.srcChain != srcChain || tx.dstChain != dstChain || tx.protocol != protocol, tx.type != type) {
             console.log("Skipping ", tx.type, tx.protocol, tx.srcChain, tx.dstChain, tx.hash);
@@ -54,6 +49,8 @@ async function main() {
         }
     }
 
+    // TODO: what is the best minimum matchedTx ? 
+    // TODO: Is there a correlation of the time for different time of the day or week and has to be adddressed?
     const sum = matchedTx.reduce((acc, tx) => acc + tx.getTime(), 0);
     const average = sum / matchedTx.length;
     console.log(`average confirmation time for ${type} ${protocol} @ ${srcChain}->${dstChain} over ${bridge}, ${amb} is ${average}ms`);
